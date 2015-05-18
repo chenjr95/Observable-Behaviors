@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Observable Behaviors</string>
+    <string name="title_activity_evaluator">Evaluator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_evaluation">Submit Evaluation</string>
+    <string name="title_activity_evaluator_profile">Evaluator Profile</string>
+    <string name= "hidden_text_header">Comment invisible to trainee:</string>
+    <string name="title_activity_evaluator_history">Evaluator History</string>
+
+</resources>

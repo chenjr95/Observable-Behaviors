@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "Obs-Be": {
+      "applicationId": "NzGhhEKGcdmj2fe7saut3aAiCnUTglqrLvPvcEBe",
+      "masterKey": "2c8CI3um7rWvUYYiWuy0UWmp1ewOtiMVfxFi5Z7P"
+    },
+    "_default": {
+      "link": "Obs-Be"
+    }
+  }
+}

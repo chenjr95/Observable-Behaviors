@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="a.cis350project" >
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EvaluatorActivity"
+            android:label="@string/title_activity_evaluator" >
+        </activity>
+        <activity
+            android:name=".EvaluationActivity"
+            android:label="@string/title_activity_evaluation" >
+        </activity>
+        <activity
+            android:name=".EvaluationHistoryActivity"
+            android:label="Evaluation History" >
+        </activity>
+        <activity
+            android:name=".CoordinatorActivity"
+            android:label="Coordinator" >
+        </activity>
+        <activity
+            android:name=".ChangeOBActivity"
+            android:label="Add/Remove Observable Behaviors" >
+        </activity>
+        <activity
+            android:name=".CoordinatorOBTraineeActivity"
+            android:label="Coordinator: Trainee&apos;s OB&apos;s" >
+        </activity>
+        <activity
+            android:name=".CoordinatorHistoryActivity"
+            android:label="Coordinator: Trainee&apos;s History for OB" >
+        </activity>
+        <activity
+            android:name=".AssignTraineesActivity"
+            android:label="Assign Trainees" >
+        </activity>
+        <activity
+            android:name=".EvaluatorProfileActivity"
+            android:label="@string/title_activity_evaluator_profile" >
+        </activity>
+        <activity
+            android:name=".EvaluatorHistoryActivity"
+            android:label="@string/title_activity_evaluator_history" >
+        </activity>
+    </application>
+
+</manifest>

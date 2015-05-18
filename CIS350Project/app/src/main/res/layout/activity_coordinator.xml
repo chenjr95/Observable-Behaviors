@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="a.cis350project.CoordinatorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Program:  "
+        android:id="@+id/coordinatorProgram"
+        android:layout_marginBottom="40px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/programName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="false"
+        android:layout_toEndOf="@id/coordinatorProgram" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_marginTop="1mm"
+        android:layout_marginBottom="1mm"
+        android:id="@+id/topButtons"
+        android:layout_below="@id/programName"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add/Remove OB's"
+                android:id="@+id/addRemoveOB"
+                android:onClick="changeOB"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add/Remove Trainees"
+                android:layout_alignParentRight="true"
+                android:onClick="addTrainees"
+                android:id="@+id/addTrainees"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topButtons"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Your Evaluators"
+                android:id="@+id/textView1"
+                android:layout_alignParentStart="true" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:id="@+id/evaluatorsList"
+                android:layout_height="fill_parent"
+                android:dividerHeight="5px"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="50">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="All Trainees"
+                android:id="@+id/textView2"
+                android:layout_alignParentStart="true" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/traineesList"
+                android:dividerHeight="5px"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2" />
+
+    </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Trainees"
+            android:layout_marginRight="225px"
+            android:layout_marginLeft="225px"
+            android:onClick="emailAllTrainees"
+            android:id="@+id/emailTrainees"/>
+    </LinearLayout>
+</RelativeLayout>
